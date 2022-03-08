@@ -9,6 +9,11 @@ public class CoinFlip {
 
 		Scanner scanner = new Scanner(System.in);
 		String headsOrTailsGuess = scanner.nextLine();
+		
+		if (!headsOrTailsGuess.equals("heads") && !headsOrTailsGuess.equals("tails")  ) {
+			System.out.println("Please restart and enter either heads or tails");
+			return;
+		}
 
 		System.out.println("How many times shall we flip a coin?");
 
